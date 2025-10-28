@@ -1,2 +1,6 @@
-python-telegram-bot==20.3
-routeros_api
+services:
+  - type: web
+    name: mikrotik-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
